@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #93461d;
+  --color-primary-hover: #7b3714;
+  --color-primary-container: #b25d33;
+  --color-primary-fixed: #ffdbcc;
+  --color-primary-fixed-dim: #ffb694;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed: #351000;
+  --color-on-primary-fixed-variant: #783108;
+  
+  --color-secondary: #705951;
+  --color-secondary-container: #fcdcd1;
+  --color-secondary-fixed: #fcdcd1;
+  --color-secondary-fixed-dim: #dec0b6;
+  --color-on-secondary-container: #775f57;
+  --color-on-secondary-fixed: #281811;
+
+  --color-tertiary: #44634f;
+  --color-tertiary-container: #5c7c67;
+  --color-tertiary-fixed: #c8ebd2;
+  --color-tertiary-fixed-dim: #adcfb7;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #f6fff5;
+  --color-on-tertiary-fixed: #022112;
+
+  --color-surface: #fcf9f4;
+  --color-surface-dim: #dcdad5;
+  --color-surface-bright: #fcf9f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3ee;
+  --color-surface-container: #f0ede9;
+  --color-surface-container-high: #ebe8e3;
+  --color-surface-container-highest: #e5e2dd;
+  
+  --color-on-surface: #1c1c19;
+  --color-on-surface-variant: #55433b;
+  --color-inverse-surface: #31302d;
+  --color-inverse-on-surface: #f3f0eb;
+  --color-outline: #88736a;
+  --color-outline-variant: #dbc1b7;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #fcf9f4;
+  color: #1c1c19;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-serif, .font-headline {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "O'guia - Dad's Cocoa Farm",
+  "description": "Artisan single-origin tree-to-bar chocolate and heirloom tablea crafted from fermented cacao in Maayon, Capiz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
